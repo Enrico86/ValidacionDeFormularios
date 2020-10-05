@@ -1,4 +1,5 @@
 ﻿using System;
+using ValidacionDeFormularios.Views;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -10,7 +11,7 @@ namespace ValidacionDeFormularios
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new BehaviorsValidation();
         }
 
         protected override void OnStart()
