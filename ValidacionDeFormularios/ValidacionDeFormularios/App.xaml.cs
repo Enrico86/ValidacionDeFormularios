@@ -1,5 +1,6 @@
 ﻿using System;
 using ValidacionDeFormularios.Views;
+using ValidacionDeFormularios.Views.TriggersValidation;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -11,7 +12,7 @@ namespace ValidacionDeFormularios
         {
             InitializeComponent();
 
-            MainPage = new BehaviorsValidation();
+            MainPage = new DataTriggerValidation();
         }
 
         protected override void OnStart()

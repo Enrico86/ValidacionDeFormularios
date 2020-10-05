@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ValidacionDeFormularios.Views.TriggersValidation.DataTriggerValidation">
+    <ContentPage.Content>
+        <StackLayout>
+            <Entry Placeholder="Name" Text="{Binding Person.Name}"></Entry>
+            <Entry Placeholder="Email" Text="{Binding Person.Email}"></Entry>
+            <Button Text="LogIn"
+                    IsEnabled="False">
+                <Button.Triggers>
+                    <DataTrigger Binding="{Binding Person.IsValid}"
+                                 TargetType="Button"
+                                 Value="true">
+                        <Setter Property="IsEnabled" Value="True"></Setter>
+                    </DataTrigger>
+                </Button.Triggers>
+            </Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
