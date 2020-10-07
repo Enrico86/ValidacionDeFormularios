@@ -1,5 +1,6 @@
 ﻿using System;
 using ValidacionDeFormularios.Views;
+using ValidacionDeFormularios.Views.INDEInfo;
 using ValidacionDeFormularios.Views.TriggersValidation;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -12,7 +13,7 @@ namespace ValidacionDeFormularios
         {
             InitializeComponent();
 
-            MainPage = new DataTriggerValidation();
+            MainPage = new SfDataFormView();
         }
 
         protected override void OnStart()

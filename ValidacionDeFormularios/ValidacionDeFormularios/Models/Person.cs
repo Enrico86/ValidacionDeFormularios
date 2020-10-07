@@ -50,6 +50,8 @@ namespace ValidacionDeFormularios.Models
         }
 
 
+
+
         public event PropertyChangedEventHandler PropertyChanged;
         protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
         {

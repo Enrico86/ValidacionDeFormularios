@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ValidacionDeFormularios.Views.INDEInfo.INDEIView">
+    <ContentPage.Content>
+        <StackLayout>
+            <Entry Placeholder="Name"
+                   x:Name="entryName"
+                   Text="{Binding Name}"></Entry>
+            <Label Text="* Name is empty"
+                   TextColor="Red"
+                   IsVisible="False"
+                   x:Name="lblNameError"></Label>
+            <Entry Placeholder="Email"
+                   x:Name="entryEmail"
+                   Text="{Binding Email}"></Entry>
+            <Label Text="* Email is incorrect"
+                   TextColor="Red"
+                   IsVisible="False"
+                   x:Name="lblEmailError"></Label>
+            <Button x:Name="buttonLogin"
+                    Text="LogIn"
+                    IsEnabled="False"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
