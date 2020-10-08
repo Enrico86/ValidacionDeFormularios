@@ -1,5 +1,6 @@
 ﻿using System;
 using ValidacionDeFormularios.Views;
+using ValidacionDeFormularios.Views.Fluent_Validator;
 using ValidacionDeFormularios.Views.INDEInfo;
 using ValidacionDeFormularios.Views.TriggersValidation;
 using Xamarin.Forms;
@@ -13,7 +14,7 @@ namespace ValidacionDeFormularios
         {
             InitializeComponent();
 
-            MainPage = new SfDataFormView();
+            MainPage = new FluentValidationView();
         }
 
         protected override void OnStart()
